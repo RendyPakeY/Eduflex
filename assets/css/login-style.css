@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    --primary-color: rgba(2,169,247,255);
+    --second-color: rgba(3,87,123,255);
+    --dark-color: rgba(1,49,63,255);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    display: flex;
+    background-image: linear-gradient(rgba(0, 26, 37, 0.65),rgba(0, 26, 37, 0.65),rgba(0, 26, 37, 0.65)), url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwdXNpbmclMjB0ZWNobm9sb2d5fGVufDB8fDB8fHww);
+    background-size:cover;
+    background-position: 0 0;
+    height: 100vh;
+}   
+.background-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.background .sumber{
+    position: absolute;
+    color: white;
+    font-size: .7rem;
+    left: 87%;
+    top: 95%;
+}
+.background-content h1, .background-content p{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 10px;
+    font-size: 118%;
+}
+.background-content p{
+    font-size: 1rem;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 30px 0.1px rgba(0,0,0,1);
+    padding: 0 40px;
+    height: 100vh;
+    width: 35vw;
+}
+.logo{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    margin-left: 81vw;
+    margin-top: 5vh;
+}
+.logo img{
+    height: 4rem;
+}
+.logo h1{
+    font-size: 1.2rem;
+    margin-left: 8px;
+    color: rgb(65, 178, 225);
+}
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login-container form a{
+    color: var(--second-color);
+    text-align: end;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+.login-container form label{
+    margin-left: 1px;
+    margin-bottom: 2px;
+}
+.login-container form input{
+    background-color: white;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+.login-container form input{
+    padding-left: 5px;
+    width: auto;
+}
+.login-container form button{
+    background-color: var(--primary-color);
+    color: white;
+    /* padding: 4px; */
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: solid var(--primary-color) 1px;
+}
+.login-container h1{
+    color: rgb(17, 49, 65);
+    font-size: 1.5rem;
+    height: 0;
+    padding-bottom: 25px;
+}
+.login-container form button:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+#preload{
+    background: white url("../img/Loading.gif") center center;
+    background-size: 5%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    transition: 1s;
+}
+@media screen and (max-width: 1024px) {
+    .background .sumber{
+        left: 80%;
+    }
+    .background{
+        background-position: 0;
+    }
+    .logo{
+        margin-left: 80vw;
+    }
+    .logo img{
+        height: 3.5rem;
+    }
+    .logo h1{
+        font-size: 87.5%;
+    }
+    .login-container{
+        width: 50vw;
+    }
+    .background-content h1, .background-content p{
+        font-size: 95%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo{
+        margin-left: 75vw;
+    }
+    .background-content h1, .background-content p{
+        font-size: 75%;
+    }
+    .login-container{
+        width: 65vw;
+    }
+    .background-content h1{
+        line-height: 15px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .background{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .background-content-container{
+        display: none;
+    }
+    .background .sumber{
+        left: 60%;
+    }
+    .login-container{
+        height: fit-content ;
+        width: 80%;
+        padding: 10vh 20px;
+        border-radius: 10px;
+    }
+    .logo{
+        /* position: relative; */
+        margin-left: 10vw;
+        margin-bottom: 94vh;
+    }
+    .logo img{
+        height: 3rem;
+    }
+    .logo h1{
+        font-size: 75%;
+    }
+    .login-container form label, .login-container form input, .login-container form button, .login-container form a{
+    font-size: 75%;
+    }
+    .login-container h1{
+        font-size: 120%;
+    }
+}
