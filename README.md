@@ -12,7 +12,7 @@ It aims to simplify the management and oversight of IoT systems in educational o
 
 ## 🌐 Project Links
 - [Repository on GitHub](https://github.com/RendyPakeY/Eduflex)
-- [Demo](https://RendyPakeY.github.io/Eduflex)
+- [Demo](https://eduflex.rf.gd)
 
 ## 🤝 Contributing
 Fork the repository and submit pull requests. Issues and suggestions are welcome!
